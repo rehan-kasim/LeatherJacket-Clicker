@@ -1,14 +1,33 @@
 [gd_scene format=3 uid="uid://ci2oa2t46s5h1"]
 
-[ext_resource type="PackedScene" uid="uid://c3xonji5o3aql" path="res://Scenes/leather_jacket_ceo.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://ci2oa2t46s5h1" path="res://Scenes/game.tscn" id="1_ebmjs"]
+[ext_resource type="Texture2D" uid="uid://67ge2tdpwvla" path="res://Assets/bg.jpg" id="1_wrm1d"]
+[ext_resource type="FontFile" uid="uid://cgs4i01iy3ten" path="res://Assets/Axolotl.ttf" id="2_3dryh"]
 
-[node name="Game" type="Control" unique_id=1039959841]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Game" unique_id=1039959841 instance=ExtResource("1_ebmjs")]
 
-[node name="Leather-Jacket-CEO" parent="." unique_id=902456 instance=ExtResource("1_ebmjs")]
-position = Vector2(174, 148)
+[node name="Bg" type="Sprite2D" parent="." index="0" unique_id=1596231995]
+position = Vector2(464.99997, 315)
+scale = Vector2(0.620943, 0.692347)
+texture = ExtResource("1_wrm1d")
+
+[node name="Leather-Jacket-CEO" parent="." index="1" unique_id=902456]
+position = Vector2(410, 316)
+
+[node name="Upgrades-menu" type="ColorRect" parent="." index="2" unique_id=872205189]
+layout_mode = 0
+offset_left = 869.0
+offset_top = -36.0
+offset_right = 1168.0
+offset_bottom = 714.0
+color = Color(0.34117648, 0.09803922, 0.47843137, 1)
+
+[node name="Label" type="Label" parent="Upgrades-menu" index="0" unique_id=1052529780]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 33.0
+offset_right = 271.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("2_3dryh")
+theme_override_font_sizes/font_size = 100
+text = "Upgrades"
