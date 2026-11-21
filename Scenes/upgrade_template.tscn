@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bcjg4pnwbfjmt"]
 
 [node name="Upgrade-template" type="ColorRect" unique_id=1204393256]
-offset_left = 241.0
-offset_top = 122.0
-offset_right = 436.0
-offset_bottom = 213.0
+offset_left = 17.0
+offset_top = -22.0
+offset_right = 212.0
+offset_bottom = 69.0
 color = Color(0.7294118, 0.42352942, 0.972549, 1)
