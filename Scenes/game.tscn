@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://cgs4i01iy3ten" path="res://Assets/Axolotl.ttf" id="2_wrm1d"]
 [ext_resource type="AudioStream" uid="uid://b07on8uxpam66" path="res://Assets/bg-music.mp3" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://c3xonji5o3aql" path="res://Scenes/leather_jacket_ceo.tscn" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://bcjg4pnwbfjmt" path="res://Scenes/upgrade_template.tscn" id="5_wowpa"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wbyq8"]
 font = ExtResource("2_wrm1d")
@@ -47,3 +48,10 @@ autoplay = true
 
 [node name="Leather-Jacket-CEO" parent="." unique_id=902456 instance=ExtResource("4_3dryh")]
 position = Vector2(449, 321)
+
+[node name="Upgrade-template" parent="." unique_id=1204393256 instance=ExtResource("5_wowpa")]
+layout_mode = 0
+offset_left = 924.0
+offset_top = 110.0
+offset_right = 1119.0
+offset_bottom = 201.0
