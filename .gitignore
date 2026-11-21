@@ -1,7 +1,1 @@
-<<<<<<< HEAD
 .godot/
-=======
-# Godot 4+ specific ignores
-.godot/
-/android/
->>>>>>> 18fe943 (Initial commit)

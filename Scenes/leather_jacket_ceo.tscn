@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://c3xonji5o3aql"]
 
-<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://c5yhgpudaif5l" path="res://Assets/jensen_huang.png" id="1_a1sjo"]
 
 [node name="Leather-Jacket-CEO" type="Area2D" unique_id=902456]
@@ -12,11 +11,3 @@ texture = ExtResource("1_a1sjo")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1877758174]
 position = Vector2(-235, -155)
 polygon = PackedVector2Array(179, 37, 225, 16, 254, 14, 290, 28, 329, 57, 331, 86, 319, 100, 320, 137, 293, 171, 312, 197, 313, 253, 300, 253, 296, 201, 288, 199, 287, 253, 280, 307, 278, 319, 306, 319, 307, 331, 264, 330, 264, 317, 272, 294, 268, 258, 241, 257, 228, 291, 228, 317, 247, 317, 251, 327, 214, 327, 216, 259, 200, 250, 188, 233, 188, 188, 223, 175, 174, 142, 151, 140, 150, 108, 156, 61)
-=======
-[ext_resource type="PackedScene" uid="uid://c3xonji5o3aql" path="res://Scenes/leather_jacket_ceo.tscn" id="1_a1sjo"]
-
-[node name="Leather-Jacket-CEO" unique_id=902456 instance=ExtResource("1_a1sjo")]
-
-[node name="CollisionPolygon2D" parent="." index="1" unique_id=1877758174]
-position = Vector2(-235, -156)
->>>>>>> 18fe943 (Initial commit)
