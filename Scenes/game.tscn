@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ci2oa2t46s5h1"]
+
+[ext_resource type="PackedScene" uid="uid://c3xonji5o3aql" path="res://Scenes/leather_jacket_ceo.tscn" id="1_ebmjs"]
+
+[node name="Game" type="Control" unique_id=1039959841]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Leather-Jacket-CEO" parent="." unique_id=902456 instance=ExtResource("1_ebmjs")]
+position = Vector2(174, 148)
