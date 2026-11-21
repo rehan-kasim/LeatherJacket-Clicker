@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://ci2oa2t46s5h1"]
+
+[ext_resource type="Texture2D" uid="uid://67ge2tdpwvla" path="res://Assets/bg.jpg" id="1_qxrlw"]
+[ext_resource type="FontFile" uid="uid://cgs4i01iy3ten" path="res://Assets/Axolotl.ttf" id="2_wrm1d"]
+[ext_resource type="AudioStream" uid="uid://b07on8uxpam66" path="res://Assets/bg-music.mp3" id="3_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://c3xonji5o3aql" path="res://Scenes/leather_jacket_ceo.tscn" id="4_3dryh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wbyq8"]
+font = ExtResource("2_wrm1d")
+font_size = 99
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Game" type="Control" unique_id=1585746419]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bg" type="Sprite2D" parent="." unique_id=1939125657]
+position = Vector2(442.00003, 333)
+scale = Vector2(0.56460506, 0.6999999)
+texture = ExtResource("1_qxrlw")
+
+[node name="Upgrade-menu" type="ColorRect" parent="." unique_id=830493771]
+layout_mode = 0
+offset_left = 889.0
+offset_top = -24.0
+offset_right = 1179.0
+offset_bottom = 658.0
+color = Color(0.34117648, 0.09803922, 0.47843137, 1)
+
+[node name="upgrade-text" type="Label" parent="Upgrade-menu" unique_id=1194585872]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 33.0
+offset_right = 262.0
+offset_bottom = 183.0
+text = "Upgrades"
+label_settings = SubResource("LabelSettings_wbyq8")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=721593253]
+stream = ExtResource("3_wrm1d")
+autoplay = true
+
+[node name="Leather-Jacket-CEO" parent="." unique_id=902456 instance=ExtResource("4_3dryh")]
+position = Vector2(449, 321)

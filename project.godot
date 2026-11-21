@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="LeatherJacket-Clicker"
+run/main_scene="uid://ci2oa2t46s5h1"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [display]
